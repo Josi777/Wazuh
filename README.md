@@ -7,8 +7,7 @@ Services included are :
 * Monitoring for suspicious activity on the endpoints.  
 * Visualizing complex events into neat dashboards and graphs.
 
-![Image][assets
-/Screenshot 2026-08-25 222954.png]
+![Image](assets/Screenshot%202026-08-25%20222954.png)
 
 * As we can see on the image there is only one wazuh server manager and multiple wazuh agents that send data to the manager.
 
