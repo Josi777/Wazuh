@@ -11,65 +11,56 @@ Services included are :
 
 * As we can see on the image there is only one wazuh server manager and multiple wazuh agents that send data to the manager.
 
-![][image2]
+![Image](assets/Screenshot%202026-08-25%20224558.png)
 
 * Our wazuh management server looks this.
 
 Wazuh agents
 
-![][image3]
+![Image](assets/Screenshot%202026-08-25%20224934.png)
 
 * We have two agents one Linux(10.82.116.88) and one Windows(10.82.99.206) device.
 
-![][image4]
+![Image](assets/Screenshot%202026-08-25%20230212.png)
 
 1. We can deploy new agent   
 2. We can also export  agents with full information into csv file.
 
-![][image5]
-
+![Image](assets/Screenshot%202026-08-25%20230505.png)
 Wazuh Groups
 
 The agents can be organized groups, each of which can contain specific audit policies and logging settings. When we deploy a new agent we can add it to the existing groups unless it takes default.
 
-![][image6]
-
+![Image](assets/Screenshot%202026-08-25%20231113.png)
 **Configuration and IT Hygiene**
 
 After the agent is installed the wazuh starts collecting many many information about the agent.useful category for IT is IT Hygiene.
 
-![][image7]
-
+![Image](assets/Screenshot%202026-08-25%20231805.png)
 * (IT Hygiene) that provides real-time visibility into the system inventory and configurations of all monitored endpoints across an organization's infrastructure.
 
-![][image8]
-
+![Image](assets/Screenshot%202026-08-25%20231919.png)
 ## **Wazuh and CIS Benchmarks**
 
 * Used for Security Configuration Assessment (SCA) to audit, monitor, and enforce secure system configurations on endpoints.
 
-![][image9]
-
+![Image](assets/Screenshot%202026-08-25%20235946.png)
 ## **Wazuh and Vulnerability Detection**
 
 Vulnerability detection is a powerful tool to periodically scan an agent for vulnerable applications.
 
-![][image10]
-
+![Image](assets/Screenshot%202026-08-26%20001629.png)
 * The below image show many vulnerabilities are presented on the linux-server then they are potentially exploitable 
 
-![][image11]
-
+![Image](assets/Screenshot%202026-08-26%20001840.png)
 ## **Logging With Wazuh**
 
 * We can collect and parse security logs from the agents. From Explore \-\> Discover 
 
-![][image12]
-
+![Image](assets/Screenshot%202026-08-26%20011242.png)
 * Then we can filter the log 
 
-![][image13]
-
+![Image](assets/Screenshot%202026-08-26%20011644.png)
 ## **Logs vs Rules vs Alerts**
 
 * We are going to set alerts on wazuh rules and non-matching events will be discarded.Wazuh has hundreds of prebuilt rules for different OS data sources, each having a level from 1 to 15, where 15 is the most critical alert possible.
@@ -78,54 +69,43 @@ Vulnerability detection is a powerful tool to periodically scan an agent for vul
 
 * Visualizing setting rules 
 
- ![][image14]
-
-![][image15]
-
+![Image](assets/Screenshot%202026-08-26%20012356.png)
+![Image](assets/Screenshot%202026-08-26%20012609.png)
 **Common Log Collection**
 
 ## **Agent Configuration**
 
 Wazuh’s default log collection is not [enough](http://enough.if) if we want to collect custom logs we should specify within a Group then the rules will apply for every agent.
 
-![][image16]
-
+![Image](assets/Screenshot%202026-08-26%20083709.png)
 * As we can see below we have 2 agents  Group name: default  and we can also edit the configuration.
 
-![][image17] 
-
-![][image18]
-
+![Image](assets/Screenshot%202026-08-26%20084007.png)
+![Image](assets/Screenshot%202026-08-26%20084237.png)
 * As we can see we can specify the OS, log format, Location.
 
 ## **Wazuh Decoders(Parsing instructions) :** instructing wazuh how to process the incoming raw data, as every source sends the events in its own unique format.  
 
-![][image19]
-
+![Image](assets/Screenshot%202026-08-26%20085143.png)
 * We have 1,576 decoders by default 
 
-![][image20]
-
+![Image](assets/Screenshot%202026-08-26%20085323.png)
 ## **Wazuh Rules :** to set alerts.
 
-![][image21]
-
-![][image22]
-
+![Image](assets/Screenshot%202026-08-26%20085925.png)
+![Image](assets/Screenshot%202026-08-26%20090101.png)
 * As we can see, 4513 rules are setted by default.
 
 ## **Alert Notifications**
 
 We can configure notifications if some rules are triggered.
 
-![][image23]
-
-![][image24]
-
+![Image](assets/Screenshot%202026-08-26%20092957.png)
+![Image](assets/Screenshot%202026-08-26%20093445.png)
 * Which allows notification to be received there is an recipient option when the alert happens it sends notifications.
 
 
-![][image25]
+![Image](assets/Screenshot%202026-08-26%20094349.png)
 
  
 
